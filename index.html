@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zhuowei Automation | Precision Liquid Filling & Packaging Solutions</title>
+  <meta name="description" content="Precision liquid filling and packaging equipment for industrial manufacturing applications. OEM customization, factory direct supply, quality assurance and global export support." />
+  <style>
+    :root {
+      --blue: #123a8c;
+      --deep: #081833;
+      --green: #2fa84f;
+      --text: #1f2937;
+      --muted: #64748b;
+      --light: #f5f7fb;
+      --border: #e2e8f0;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: #fff;
+      line-height: 1.6;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    .container { width: min(1180px, 92%); margin: 0 auto; }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255,255,255,.96);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(8px);
+    }
+    .nav {
+      height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .logo { display: flex; align-items: center; gap: 12px; }
+    .logo img { height: 42px; width: auto; object-fit: contain; }
+    .nav-links { display: flex; align-items: center; gap: 24px; color: #334155; font-size: 15px; }
+    .nav-cta {
+      background: var(--green);
+      color: #fff;
+      padding: 11px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      box-shadow: 0 8px 18px rgba(47,168,79,.22);
+    }
+    .hero {
+      background:
+        radial-gradient(circle at 80% 10%, rgba(47,168,79,.16), transparent 28%),
+        linear-gradient(135deg, #06152f 0%, #123a8c 60%, #0b2150 100%);
+      color: #fff;
+      padding: 82px 0 72px;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.02fr .98fr;
+      align-items: center;
+      gap: 52px;
+    }
+    .eyebrow {
+      display: inline-flex;
+      padding: 7px 12px;
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 999px;
+      font-size: 13px;
+      letter-spacing: .04em;
+      color: #dbeafe;
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: clamp(38px, 5vw, 68px);
+      line-height: 1.05;
+      margin: 0 0 18px;
+      letter-spacing: -0.04em;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #dbeafe;
+      margin: 0 0 28px;
+      max-width: 650px;
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 22px;
+      border-radius: 10px;
+      font-weight: 700;
+      cursor: pointer;
+      border: 0;
+      font-size: 16px;
+    }
+    .btn-primary { background: var(--green); color: #fff; }
+    .btn-secondary { background: rgba(255,255,255,.10); color: #fff; border: 1px solid rgba(255,255,255,.25); }
+    .hero-card {
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 24px;
+      padding: 18px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.28);
+    }
+    .hero-card img { border-radius: 16px; background: #fff; aspect-ratio: 4 / 5; object-fit: cover; }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 30px;
+    }
+    .stat {
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 16px;
+      padding: 16px;
+    }
+    .stat strong { display: block; font-size: 24px; color: #fff; }
+    .stat span { color: #bfdbfe; font-size: 13px; }
+    section { padding: 76px 0; }
+    .section-head { max-width: 760px; margin-bottom: 34px; }
+    .section-head .label { color: var(--green); font-weight: 800; letter-spacing: .08em; font-size: 13px; text-transform: uppercase; }
+    h2 { font-size: clamp(30px, 3vw, 46px); line-height: 1.14; margin: 8px 0 12px; letter-spacing: -0.03em; color: #0f172a; }
+    .section-head p { color: var(--muted); margin: 0; font-size: 17px; }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+    .feature, .product, .contact-card, .cert-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(15,23,42,.06);
+    }
+    .feature { padding: 24px; }
+    .feature .icon {
+      width: 42px; height: 42px; border-radius: 12px;
+      background: #e9f8ee; color: var(--green); display: grid; place-items: center;
+      font-weight: 900; margin-bottom: 16px;
+    }
+    .feature h3 { margin: 0 0 8px; font-size: 18px; color: #0f172a; }
+    .feature p { margin: 0; color: var(--muted); font-size: 14.5px; }
+    .products { background: var(--light); }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+    .product { overflow: hidden; }
+    .product-img { background: #fff; height: 260px; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--border); }
+    .product-img img { width: 100%; height: 100%; object-fit: cover; }
+    .product-body { padding: 22px; }
+    .product h3 { margin: 0 0 10px; font-size: 20px; color: #0f172a; }
+    .product p { margin: 0 0 16px; color: var(--muted); font-size: 14.5px; }
+    .specs { display: grid; gap: 8px; margin: 0 0 18px; padding: 0; list-style: none; }
+    .specs li { display: flex; gap: 8px; font-size: 14px; color: #334155; }
+    .specs li::before { content: "✓"; color: var(--green); font-weight: 900; }
+    .product a { color: var(--blue); font-weight: 800; font-size: 14px; }
+    .cert-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 32px; align-items: center; }
+    .cert-card { padding: 16px; }
+    .cert-card img { border-radius: 14px; }
+    .cert-list { display: grid; gap: 14px; }
+    .cert-item { display: flex; gap: 14px; align-items: flex-start; padding: 18px; border-radius: 16px; background: var(--light); }
+    .cert-item strong { display: block; color: #0f172a; margin-bottom: 2px; }
+    .cert-item span { color: var(--muted); font-size: 14px; }
+    .about { background: #fff; }
+    .about-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 40px; align-items: center; }
+    .about-box { background: var(--deep); color: #fff; padding: 34px; border-radius: 24px; }
+    .about-box h2 { color: #fff; margin-top: 0; }
+    .about-box p { color: #cbd5e1; }
+    .about-points { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .about-point { padding: 20px; border: 1px solid var(--border); border-radius: 18px; background: #fff; }
+    .about-point strong { display: block; color: #0f172a; margin-bottom: 6px; }
+    .about-point span { color: var(--muted); font-size: 14px; }
+    .contact { background: linear-gradient(135deg, #06152f 0%, #123a8c 100%); color: #fff; }
+    .contact h2 { color: #fff; }
+    .contact .section-head p { color: #dbeafe; }
+    .contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 26px; align-items: start; }
+    .contact-card { padding: 26px; color: var(--text); }
+    .contact-card h3 { margin: 0 0 12px; color: #0f172a; }
+    .contact-card p { color: var(--muted); margin: 0 0 18px; }
+    .contact-actions { display: grid; gap: 12px; }
+    .whatsapp-big { background: var(--green); color: #fff; border-radius: 12px; padding: 16px; display: flex; justify-content: center; font-weight: 800; }
+    form { display: grid; gap: 12px; }
+    input, textarea {
+      width: 100%; padding: 13px 14px; border: 1px solid var(--border); border-radius: 10px; font: inherit;
+    }
+    textarea { min-height: 120px; resize: vertical; }
+    footer { background: #06152f; color: #94a3b8; padding: 28px 0; font-size: 14px; }
+    footer .container { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .floating-wa {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: var(--green);
+      color: #fff;
+      padding: 14px 18px;
+      border-radius: 999px;
+      font-weight: 800;
+      box-shadow: 0 14px 34px rgba(47,168,79,.35);
+      z-index: 30;
+    }
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .hero-grid, .cert-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; }
+      .stats, .features, .product-grid, .about-points { grid-template-columns: 1fr 1fr; }
+      .hero { padding: 58px 0; }
+    }
+    @media (max-width: 620px) {
+      .stats, .features, .product-grid, .about-points { grid-template-columns: 1fr; }
+      .nav { height: 68px; }
+      .logo img { height: 34px; }
+      section { padding: 56px 0; }
+      .hero-actions .btn { width: 100%; }
+      footer .container { display: block; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="#top" aria-label="Zhuowei Automation Home">
+        <img src="logo.png" alt="Zhuowei Automation logo" />
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#solutions">Solutions</a>
+        <a href="#products">Products</a>
+        <a href="#quality">Quality</a>
+        <a href="#contact" class="nav-cta">Get Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Factory Direct • OEM Customization • Global Export</span>
+          <h1>Precision Liquid Filling & Packaging Solutions</h1>
+          <p>Custom automatic and semi-automatic equipment for small-volume liquid filling, capping, and packaging applications. Built for accuracy, stability, and efficient production.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Get A Free Quote</a>
+            <a class="btn btn-secondary whatsapp-link" href="#contact">WhatsApp Us</a>
+          </div>
+          <div class="stats" aria-label="Company highlights">
+            <div class="stat"><strong>OEM</strong><span>Custom solutions</span></div>
+            <div class="stat"><strong>CE</strong><span>Quality support</span></div>
+            <div class="stat"><strong>PLC</strong><span>Smart control</span></div>
+            <div class="stat"><strong>Global</strong><span>Export service</span></div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="hero-machine.jpg" alt="Automatic filling and packaging machine" />
+        </div>
+      </div>
+    </section>
+
+    <section id="solutions">
+      <div class="container">
+        <div class="section-head">
+          <span class="label">Why Choose Us</span>
+          <h2>Reliable manufacturing partner for precision filling equipment</h2>
+          <p>We focus on practical, stable, and customizable equipment for manufacturers who need better filling accuracy, easier operation, and scalable production.</p>
+        </div>
+        <div class="features">
+          <div class="feature"><div class="icon">1</div><h3>High Precision</h3><p>Designed for small-volume liquid filling with stable and repeatable filling performance.</p></div>
+          <div class="feature"><div class="icon">2</div><h3>OEM Customization</h3><p>Machine structure, tank capacity, filling heads, and workflow can be adjusted for your production needs.</p></div>
+          <div class="feature"><div class="icon">3</div><h3>Easy Operation</h3><p>Touchscreen control, PLC program support, and user-friendly operation for production teams.</p></div>
+          <div class="feature"><div class="icon">4</div><h3>Export Ready</h3><p>Wooden case packaging, quality documents, and international customer support available.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="products">
+      <div class="container">
+        <div class="section-head">
+          <span class="label">Product Range</span>
+          <h2>Filling, capping, and packaging equipment</h2>
+          <p>From compact semi-automatic machines to multi-head automatic systems, we provide flexible options for different production stages.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product">
+            <div class="product-img"><img src="product-five-head.jpg" alt="Five-head automatic liquid filling machine" /></div>
+            <div class="product-body"><h3>Five-Head Automatic Filling Machine</h3><p>High-efficiency automatic filling solution for medium to larger production needs.</p><ul class="specs"><li>Five filling heads</li><li>Touchscreen + PLC control</li><li>Custom programs available</li></ul><a href="#contact">Request details →</a></div>
+          </article>
+          <article class="product">
+            <div class="product-img"><img src="product-single-head.jpg" alt="Single-head automatic liquid filling machine" /></div>
+            <div class="product-body"><h3>Single-Head Automatic Filling Machine</h3><p>Compact automatic machine suitable for precise small-volume filling applications.</p><ul class="specs"><li>Single filling head</li><li>Heating option available</li><li>Easy operation and maintenance</li></ul><a href="#contact">Request details →</a></div>
+          </article>
+          <article class="product">
+            <div class="product-img"><img src="product-semi-auto.jpg" alt="Semi-automatic precision filling machine" /></div>
+            <div class="product-body"><h3>Semi-Automatic Precision Filling Machine</h3><p>Flexible solution for small batches, pilot production, and customized filling needs.</p><ul class="specs"><li>Compact desktop design</li><li>Touchscreen control</li><li>Suitable for flexible production</li></ul><a href="#contact">Request details →</a></div>
+          </article>
+          <article class="product">
+            <div class="product-img"><img src="product-auto-capping.jpg" alt="Automatic capping machine" /></div>
+            <div class="product-body"><h3>Automatic Capping Machine</h3><p>Electric capping system designed to improve consistency and reduce manual work.</p><ul class="specs"><li>Automatic operation</li><li>Adjustable pressing stroke</li><li>Stable electric control</li></ul><a href="#contact">Request details →</a></div>
+          </article>
+          <article class="product">
+            <div class="product-img"><img src="product-manual-capping.jpg" alt="Manual capping machine" /></div>
+            <div class="product-body"><h3>Manual Capping Machine</h3><p>Cost-effective manual solution for prototyping and small-batch production.</p><ul class="specs"><li>Mechanical structure</li><li>Portable design</li><li>Low maintenance</li></ul><a href="#contact">Request details →</a></div>
+          </article>
+          <article class="product">
+            <div class="product-img"><img src="hero-machine.jpg" alt="Customized automation equipment" /></div>
+            <div class="product-body"><h3>Custom Automation System</h3><p>Integrated equipment for sorting, filling, capping, and packaging workflows.</p><ul class="specs"><li>Customized layout</li><li>Factory direct support</li><li>Production line solutions</li></ul><a href="#contact">Request details →</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="quality">
+      <div class="container cert-grid">
+        <div class="cert-card">
+          <img src="certifications-test-reports.png" alt="Certifications and test reports" />
+
+        </div>
+        <div>
+          <div class="section-head">
+            <span class="label">Quality Assurance</span>
+            <h2>Certifications & test reports for international customers</h2>
+            <p>Our equipment is supported by compliance documents and professional test reports to help customers evaluate quality and export readiness.</p>
+          </div>
+          <div class="cert-list">
+            <div class="cert-item"><strong>✓ CE-related documents</strong><span>Machinery directive compliance support for selected equipment models.</span></div>
+            <div class="cert-item"><strong>✓ Professional test reports</strong><span>Testing documents available for customer review during quotation and project discussion.</span></div>
+            <div class="cert-item"><strong>✓ Export packaging</strong><span>Wooden case packaging and delivery support for global customers.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container about-grid">
+        <div class="about-box">
+          <h2>Zhuowei Automation</h2>
+          <p>Zhuowei Automation focuses on precision filling and packaging equipment for industrial manufacturing applications. We support OEM projects, private-label cooperation, and custom automation development based on customer requirements.</p>
+          <a class="btn btn-primary" href="#contact">Discuss Your Project</a>
+        </div>
+        <div class="about-points">
+          <div class="about-point"><strong>Factory Direct</strong><span>Direct communication with the manufacturing team.</span></div>
+          <div class="about-point"><strong>Custom Design</strong><span>Solutions based on your product, container, output, and budget.</span></div>
+          <div class="about-point"><strong>Technical Support</strong><span>Machine operation guidance and after-sales support available.</span></div>
+          <div class="about-point"><strong>Global Cooperation</strong><span>Support customers in North America, Europe, and other markets.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-head">
+          <span class="label">Contact Us</span>
+          <h2>Get a customized equipment quotation</h2>
+          <p>Tell us your product type, filling volume, required output, and preferred automation level. Our team will recommend a suitable solution.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Fast contact</h3>
+            <p>Click WhatsApp to send your requirements directly. You can also request the full product catalog.</p>
+            <div class="contact-actions">
+              <a class="whatsapp-big whatsapp-link" href="#contact">WhatsApp Us</a>
+              <p style="margin:0;color:#64748b;font-size:14px;">Tip: send product photos, filling volume, bottle size, and target output for faster quotation.</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <h3>Inquiry Form</h3>
+            <p>Fill in your needs and submit. The form will create a WhatsApp message for you.</p>
+            <form id="quoteForm">
+              <input name="name" placeholder="Your Name" required />
+              <input name="company" placeholder="Company Name" />
+              <input name="email" placeholder="Email" type="email" />
+              <input name="phone" placeholder="WhatsApp / Phone" />
+              <textarea name="message" placeholder="Tell us your product, filling volume, required output, and automation needs"></textarea>
+              <button class="btn btn-primary" type="submit">Send Inquiry</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>© Zhuowei Automation. All rights reserved.</div>
+      <div>Precision Liquid Filling & Packaging Equipment</div>
+    </div>
+  </footer>
+
+  <a class="floating-wa whatsapp-link" href="#contact">WhatsApp</a>
+
+  <script>
+    // Replace this with your WhatsApp number in international format, no + sign or spaces.
+    // Example: 8613800138000
+    const whatsappNumber = "8613133871266";
+
+    function buildWhatsAppUrl(message) {
+      if (!whatsappNumber || whatsappNumber === "YOUR_WHATSAPP_NUMBER") {
+        return "#contact";
+      }
+      return "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message);
+    }
+
+    document.querySelectorAll(".whatsapp-link").forEach(function(link) {
+      link.addEventListener("click", function(e) {
+        if (!whatsappNumber || whatsappNumber === "YOUR_WHATSAPP_NUMBER") return;
+        e.preventDefault();
+        window.open(buildWhatsAppUrl("Hello, I am interested in your precision liquid filling and packaging equipment. Please send me more details."), "_blank");
+      });
+    });
+
+    document.getElementById("quoteForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const data = new FormData(e.target);
+      const message = [
+        "Hello, I would like to request a quotation.",
+        "Name: " + (data.get("name") || ""),
+        "Company: " + (data.get("company") || ""),
+        "Email: " + (data.get("email") || ""),
+        "Phone/WhatsApp: " + (data.get("phone") || ""),
+        "Requirements: " + (data.get("message") || "")
+      ].join("\n");
+      if (!whatsappNumber || whatsappNumber === "YOUR_WHATSAPP_NUMBER") {
+        alert("Please add your WhatsApp number in the website file first. Then this form will send inquiries to WhatsApp.");
+        return;
+      }
+      window.open(buildWhatsAppUrl(message), "_blank");
+    });
+  </script>
+</body>
+</html>
